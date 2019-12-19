@@ -9,8 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- Scripts --}}
+    @stack('head-scripts')
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,9 +19,14 @@
     <!-- Styles -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @stack('head-after')
 </head>
 <body>
     <div id="app">
+    
+    @yield('content')
+
     </div>
+    @stack('bottom')
 </body>
 </html>

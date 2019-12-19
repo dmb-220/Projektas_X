@@ -6,7 +6,7 @@
             <div>
                 <b-input-group>
                     <b-input-group-prepend size="lg">
-                    <b-button variant="info">
+                    <b-button variant="info" to="ideti_skelbima">
                         <i class="fa fa-pencil-square-o"></i> Įdėti skelbimą
                     </b-button>
                     </b-input-group-prepend>
